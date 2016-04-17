@@ -73,11 +73,19 @@ $(document).ready(function(){
 			if(data.substr(0,1) == '1')
 				$("#returnMessage").html("Ok, obrigado pelo contato.").addClass("active");
 			else
+<<<<<<< HEAD
+				$("#returnMessage").html("Ops, algo de errado aconteceu.").addClass("active");
+		});
+
+		request.fail(function(){
+			$("#returnMessage").html("Ops, algo de errado aconteceu.").addClass("active");
+=======
 				$("#returnMessage").html("Ops, algo de errado").addClass("active");
 		});
 
 		request.fail(function(){
 			$("#returnMessage").html("Ops, algo de errado").addClass("active");
+>>>>>>> f05fa1c3b29873b7267292ee6e316d52c1bf8572
 		});
 	});
 
@@ -86,6 +94,17 @@ $(document).ready(function(){
 
 		switch(errorCode){
 			case 0:
+<<<<<<< HEAD
+				$("#returnMessage").html("Ops, o nome é obrigatório").addClass("active");
+				$("#input-name").focus();
+				break;
+			case 1:
+				$("#returnMessage").html("Ops, o email é obrigatório").addClass("active");
+				$("#input-email").focus();
+				break;
+			case 2:
+				$("#returnMessage").html("Ops, a mensagem é obrigatória").addClass("active");
+=======
 				$("#returnMessage").html("Ops, o nome é obrigadtório").addClass("active");
 				$("#input-name").focus();
 				break;
@@ -95,6 +114,7 @@ $(document).ready(function(){
 				break;
 			case 2:
 				$("#returnMessage").html("Ops, a mensagem é obrigadtória").addClass("active");
+>>>>>>> f05fa1c3b29873b7267292ee6e316d52c1bf8572
 				$("#input-message").focus();
 				break;
 		}
