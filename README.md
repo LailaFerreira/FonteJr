@@ -1,2 +1,2 @@
 # FonteJr
-Site em desenvolvimento para a empresa júnior Fonte Jr
+Site in development for the junior company Fonte Jr.
