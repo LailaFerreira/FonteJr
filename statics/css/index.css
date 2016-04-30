@@ -147,7 +147,8 @@ br{
 
 
 	nav ul{
-		width: 920px;
+		width: 1000
+		px;
 		float:left;
 		position: absolute;
 		left: 50%;
@@ -169,8 +170,9 @@ br{
 		box-sizing: border-box;
 	}
 
-
-
+	nav li:nth-child(5) {
+		padding: none;
+	}
 
 	/* ABOUT */
 

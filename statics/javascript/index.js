@@ -82,7 +82,7 @@ $(document).ready(function(){
 		});
 
 		request.fail(function(){
-			$("#returnMessage").html("Ops, algo de errado").addClass("active");
+			$("#returnMessage").html("Ops, algo de errado aconteceu").addClass("active");
 		});
 	});
 
@@ -91,24 +91,15 @@ $(document).ready(function(){
 
 		switch(errorCode){
 			case 0:
-				$("#returnMessage").html("Ops, o nome é obrigatório").addClass("active");
+				$("#returnMessage").html("Qual é o seu nome mesmo? ").addClass("active");
 				$("#input-name").focus();
 				break;
 			case 1:
-				$("#returnMessage").html("Ops, o email é obrigatório").addClass("active");
+				$("#returnMessage").html("Você esqueceu de informar seu e-mail :O").addClass("active");
 				$("#input-email").focus();
 				break;
 			case 2:
-				$("#returnMessage").html("Ops, a mensagem é obrigatória").addClass("active");
-				$("#returnMessage").html("Ops, o nome é obrigadtório").addClass("active");
-				$("#input-name").focus();
-				break;
-			case 1:
-				$("#returnMessage").html("Ops, o email é obrigadtório").addClass("active");
-				$("#input-email").focus();
-				break;
-			case 2:
-				$("#returnMessage").html("Ops, a mensagem é obrigadtória").addClass("active");
+				$("#returnMessage").html("Ah, manda uma mensagem pra gente!").addClass("active");
 				$("#input-message").focus();
 				break;
 		}
